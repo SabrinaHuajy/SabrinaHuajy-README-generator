@@ -118,7 +118,7 @@ async function init() {
 
         const md = generatefile(answers);
 
-        await writeToFile("README.md", md);
+        await writeToFile("./sample_README/README.md", md);
 
         console.log("Success! Professional README file completed.");
         
