@@ -15,6 +15,8 @@ The application will be invoked by using the following command:
 node index.js
 ```
 
+Link to the a walkthrough video demonstrating the functionality of the application - https://drive.google.com/file/d/1Cpd4nuSZnIOw3f74aCdFf4LKNFdLlUbY/view?usp=sharing
+
 This application has the following functionality:
 * Accepts user input.
   * When a user is prompted for information about the application repository then a high-quality, professional README.md is generated with:
