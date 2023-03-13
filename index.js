@@ -9,65 +9,65 @@ const writeToFile = util.promisify(fs.writeFile);
 // array of questions for user
 function promptUser() {
 
-        return inquirer.prompt([
-            {
-                type: "input",
-                message: "Title of the project",
-                name: "title"
-            },
-            {
-                type: "input",
-                message: "Project description",
-                name: "description"
-            },
-            {
-                type: "input",
-                message: "Installation instructions",
-                name: "instal"
-            },
-            {
-                type: "input",
-                message: "Direction of usage",
-                name: "usage"
-            },
-            {
-                type: "list",
-                message: "Licenses",
-                name: "badge",
-                choices: [
-                    "MIT",
-                    "IBM",
-                    "Apache",
-                    "Perl"
-                ]
-            },
-            {
-                type: "input",
-                message: "Description of the license to use",
-                name: "license"
-            },
-            {
-                type: "input",
-                message: "List contributions if applicable",
-                name: "contributions"
-            },
-            {
-                type: "input",
-                message: "Test instructions or notes",
-                name: "test"
-            },
-            {
-                type: "input",
-                message: "E-mail address",
-                name: "Email"
-            },
-            {
-                type: "input",
-                message: "Github User name",
-                name: "github"
-            },
-        ]);
-    }
+    return inquirer.prompt([
+        {
+            type: "input",
+            message: "Title of the project",
+            name: "title"
+        },
+        {
+            type: "input",
+            message: "Project description",
+            name: "description"
+        },
+        {
+            type: "input",
+            message: "Installation instructions",
+            name: "instal"
+        },
+        {
+            type: "input",
+            message: "Direction of usage",
+            name: "usage"
+        },
+        {
+            type: "list",
+            message: "Licenses",
+            name: "badge",
+            choices: [
+                "MIT",
+                "IBM",
+                "Apache",
+                "Perl"
+            ]
+        },
+        {
+            type: "input",
+            message: "Description of the license to use",
+            name: "license"
+        },
+        {
+            type: "input",
+            message: "List contributions if applicable",
+            name: "contributions"
+        },
+        {
+            type: "input",
+            message: "Test instructions or notes",
+            name: "test"
+        },
+        {
+            type: "input",
+            message: "E-mail address",
+            name: "Email"
+        },
+        {
+            type: "input",
+            message: "Github User name",
+            name: "github"
+        },
+    ]);
+}
 
 
 // function to write README file
@@ -121,7 +121,7 @@ async function init() {
         await writeToFile("./sample_README/README.md", md);
 
         console.log("Success! Professional README file completed.");
-        
+
     } catch (err) {
         console.log(err);
     }
