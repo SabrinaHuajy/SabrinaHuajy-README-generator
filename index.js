@@ -103,7 +103,7 @@ ${answers.badge === "Apache" ? "Apache" + "" + '<br>' + "" + "[![License](https:
             ${answers.test}
 ## Questions
     For questions regarding this application please contact me at:
-        - E-mail ${answers.Email}
+        - E-mail: ${answers.Email}
         - Github:
         <${profile}>
         `;
