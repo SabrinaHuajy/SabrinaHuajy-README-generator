@@ -36,13 +36,12 @@ This application has the following functionality:
     * When a user clicks on the links in the **Table of Contents** then they are taken to the corresponding section of the README
 
 
-# Professional README Generator
+Professional README Generator
 MIT<br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description 
          A command-line application that allows the user to quickly and easily generate a README file.
 ## Table of contents
 - [Professional README Generator](#professional-readme-generator)
-- [Professional README Generator](#professional-readme-generator-1)
   - [Description](#description)
   - [Table of contents](#table-of-contents)
   - [Installation](#installation)
