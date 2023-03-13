@@ -22,17 +22,17 @@ function promptUser() {
             },
             {
                 type: "input",
-                message: "Installation instructions: ",
+                message: "Installation instructions",
                 name: "instal"
             },
             {
                 type: "input",
-                message: "Direction of usage ",
+                message: "Direction of usage",
                 name: "usage"
             },
             {
                 type: "list",
-                message: "Licenses: ",
+                message: "Licenses",
                 name: "badge",
                 choices: [
                     "MIT",
@@ -43,22 +43,22 @@ function promptUser() {
             },
             {
                 type: "input",
-                message: "Description of the license to use: ",
+                message: "Description of the license to use",
                 name: "license"
             },
             {
                 type: "input",
-                message: "List contributions if applicable. ",
+                message: "List contributions if applicable",
                 name: "contributions"
             },
             {
                 type: "input",
-                message: "Test instructions or notes: ",
+                message: "Test instructions or notes",
                 name: "test"
             },
             {
                 type: "input",
-                message: "E-mail address: ",
+                message: "E-mail address",
                 name: "Email"
             },
             {
@@ -71,11 +71,11 @@ function promptUser() {
 
 
 // function to write README file
-function writeToFile(dist, data) {
-}
+// function writeToFile(dist, data) {
+// }
 
 
-function generateMD(answers) {
+function generatefile(answers) {
     var profile = ("https://github.com/" + answers.github)
     return `
 # ${answers.title}
@@ -116,7 +116,7 @@ async function init() {
     try {
         const answers = await promptUser();
 
-        const md = generateMarkdown(answers);
+        const md = generatefile(answers);
 
         await writeToFile("README.md", md);
 
