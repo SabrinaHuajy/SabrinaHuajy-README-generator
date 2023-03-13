@@ -63,7 +63,7 @@ MIT<br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](ht
             To be manually tested
 ## Questions
     For questions regarding this application please contact me at:
-        - E-mail j.hua@york.ac.uk
+        - E-mail: j.hua@york.ac.uk
         - Github:
         <https://github.com/SabrinaHuajy>
         
